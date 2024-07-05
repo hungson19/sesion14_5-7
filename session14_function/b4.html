@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hàm đếm số lần xuất hiện của một ký tự trong chuỗi
+        function countCharacterOccurrences(str, char) {
+            let count = 0;
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] === char) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        
+        // Yêu cầu người dùng nhập vào một chuỗi
+        let inputString = prompt("Nhập vào một chuỗi:");
+        
+        // Yêu cầu người dùng nhập vào một ký tự
+        let inputChar = prompt("Nhập vào một ký tự:");
+        
+        // Kiểm tra tính hợp lệ của ký tự nhập vào
+        if (inputChar.length !== 1) {
+            console.log("Vui lòng nhập một ký tự duy nhất.");
+        } else {
+            // Gọi hàm và in kết quả ra màn hình console
+            let occurrenceCount = countCharacterOccurrences(inputString, inputChar);
+            console.log(`Ký tự '${inputChar}' xuất hiện ${occurrenceCount} lần trong chuỗi.`);
+        }
+
+    </script>
+</body>
+</html>

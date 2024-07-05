@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hàm tìm phần tử có độ dài lớn nhất trong mảng
+        function findLongestElement(array) {
+            if (array.length === 0) return null;
+        
+            var longest = array[0];
+            for (var element of array) {
+                if (element.length > longest.length) {
+                    longest = element;
+                }
+            }
+            return longest;
+        }
+
+        // Khai báo mảng gồm các thành phần ngẫu nhiên
+        var randomArray = ["apple", "banana", "strawberry", "kiwi", "blueberry", "grape"];
+
+        // Gọi hàm và in kết quả ra màn hình console
+        var longestElement = findLongestElement(randomArray);
+        console.log("Phần tử có độ dài lớn nhất trong mảng:", longestElement);
+
+    </script>
+</body>
+</html>

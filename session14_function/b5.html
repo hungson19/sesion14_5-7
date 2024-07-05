@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hàm tìm các phần tử trong mảng chứa chuỗi nhập vào
+        function findElementsContainingString(array, str) {
+            return array.filter(element => element.includes(str));
+        }
+
+        // Khai báo mảng gồm nhiều chuỗi bất kỳ
+        var randomArray = ["apple", "banana", "strawberry", "kiwi", "blueberry", "grape"];
+
+        // Yêu cầu người dùng nhập vào một chuỗi
+        var inputString = prompt("Nhập vào một chuỗi:");
+
+        // Gọi hàm và in kết quả ra màn hình console
+        var resultArray = findElementsContainingString(randomArray, inputString);
+        console.log("Các phần tử trong mảng chứa chuỗi '" + inputString + "':", resultArray);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hàm kiểm tra số chẵn hay lẻ
+        function checkEvenOdd(number) {
+            return number % 2 === 0 ? `${number} là số chẵn.` : `${number} là số lẻ.`;
+        }
+
+        // Khai báo 3 số ngẫu nhiên
+        var num1 = Math.floor(Math.random() * 100); // Số ngẫu nhiên từ 0 đến 99
+        var num2 = Math.floor(Math.random() * 100);
+        var num3 = Math.floor(Math.random() * 100);
+
+        // Gọi hàm và in kết quả ra màn hình console
+        console.log(checkEvenOdd(num1));
+        console.log(checkEvenOdd(num2));
+        console.log(checkEvenOdd(num3));
+
+    </script>
+</body>
+</html>

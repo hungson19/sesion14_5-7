@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hàm đếm số ký tự trong chuỗi (không tính ký tự trống)
+        function countNonSpaceCharacters(str) {
+            // Sử dụng regex để loại bỏ tất cả các ký tự trống và đếm độ dài chuỗi còn lại
+            return str.replace(/\s+/g, '').length;
+        }
+
+        // Khai báo chuỗi bất kỳ
+        var randomString = "Hello, how are you today?";
+
+        // Gọi hàm và in kết quả ra màn hình console
+        var characterCount = countNonSpaceCharacters(randomString);
+        console.log("Số ký tự trong chuỗi (không tính ký tự trống):", characterCount);
+
+    </script>
+</body>
+</html>
